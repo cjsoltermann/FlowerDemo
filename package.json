@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "esbuild app.tsx worker.ts --bundle --outdir=dist",
-    "serve": "esbuild app.tsx worker.ts --bundle --sourcemap --outdir=dist --servedir=dist --keyfile=your.key --certfile=your.cert"
+    "build": "esbuild app.tsx --bundle --outdir=dist",
+    "serve": "esbuild app.tsx --bundle --sourcemap --outdir=dist --servedir=dist --keyfile=your.key --certfile=your.cert"
   },
   "author": "Christian Soltermann",
   "license": "ISC",
