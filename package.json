@@ -1,0 +1,22 @@
+{
+  "name": "flowerdemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild app.tsx worker.ts --bundle --outdir=dist",
+    "serve": "esbuild app.tsx worker.ts --bundle --sourcemap --outdir=dist --servedir=dist --keyfile=your.key --certfile=your.cert"
+  },
+  "author": "Christian Soltermann",
+  "license": "ISC",
+  "dependencies": {
+    "@tensorflow/tfjs": "^4.4.0",
+    "@types/react": "^18.0.34",
+    "@types/react-dom": "^18.0.11",
+    "esbuild": "0.17.16",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-webcam": "^7.0.1"
+  }
+}
